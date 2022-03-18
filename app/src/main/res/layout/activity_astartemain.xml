@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/rootRelativeLayout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/contentRelativeLayout"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/photoImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/maskImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/lipStickImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/blushImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/concealerImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="25dp"
+            android:id="@+id/cursorImageView"
+            android:src="@drawable/cursor"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#80ffffff"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="70dp"
+            android:background="@drawable/border_brown"
+            android:textColor="#51483f"
+            android:text="BUY"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="90dp"
+            android:background="@drawable/border_brown"
+            android:textColor="#51483f"
+            android:text="SHARE"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/buyButton"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/wearingButton"
+            android:layout_width="100dp"
+            android:background="@drawable/border_brown"
+            android:textColor="#51483f"
+            android:text="WEARING"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="40dp"
+        android:id="@+id/menuButton"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_menu"
+        android:layout_height="40dp" />
+    <Button
+        android:layout_width="40dp"
+        android:id="@+id/cartButton"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_cart"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

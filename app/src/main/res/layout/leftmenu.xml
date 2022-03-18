@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/leftMenuLinearLayout"
+        android:layout_width="200dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/foundationsButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:text="FOUNDATIONS"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/concealersButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="CONCEALERS"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/lipsticksButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="LIPSTICKS"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/blushButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="BLUSH"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/howToUseButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="HOW TO USE"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/retakePhotoButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="RETAKE PHOTO"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/galleryButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="GALLERY"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="match_parent"
+            android:background="@drawable/border_white1"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="PROFILE"
+            android:textColor="@android:color/black"
+            android:layout_height="35dp" />
+</LinearLayout>

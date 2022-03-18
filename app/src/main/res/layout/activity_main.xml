@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.facialrecognition.main.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/face_detection"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/tempButton"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/averageButton"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/average"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/contentRelativeLayout"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/photoImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/maskImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/lipStickImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/blushImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/concealerImageView"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="25dp"
+            android:id="@+id/cursorImageView"
+            android:src="@drawable/cursor"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/cheekSampleImageView"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lipStrongImageView"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lipLightImageView"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/whiteSampleImageView"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/productNameTextView"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/productImageView"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:id="@+id/percentLinearLayout"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1.00"
+            android:textColor="@android:color/black"
+            android:id="@+id/percentTextView"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:progress="100"
+            android:id="@+id/percentSeekBar"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_above="@+id/percentLinearLayout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1.00"
+            android:textColor="@android:color/black"
+            android:id="@+id/lipStickAlphaTextView"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:progress="100"
+            android:id="@+id/lipStickSeekBar"
+            android:layout_marginTop="5dp"
+            android:max="100"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="5dp"
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/selectImageButton"
+            android:background="@null"
+            android:text="@string/select_image"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/detectFaceButton"
+            android:text="@string/detect"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@null"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

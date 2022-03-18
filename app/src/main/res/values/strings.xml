@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Facial Recognition</string>
+    <string name="face_detection">Face Detection</string>
+    <string name="select_image">Select Image</string>
+    <string name="detect">Detect Face</string>
+    <string name="temp">Temp</string>
+    <string name="white">White</string>
+    <string name="average">Effect</string>
+</resources>
